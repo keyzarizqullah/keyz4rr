@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Keyza</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #000000, #0a1a3f);
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #4da6ff;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #d0d0d0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #4da6ff;
+        }
+
+        .profile-text h2 {
+            color: #4da6ff;
+            margin-bottom: 10px;
+        }
+
+        .profile-text p {
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        .portfolio h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4da6ff;
+        }
+
+        .food-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .food-card {
+            background: #0f1f4a;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .food-card p {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Portfolio Saya</h1>
+        <p>Pelajar | Cooking Enthusiast | Future Entrepreneur</p>
+    </header>
+
+    <div class="container">
+
+        <!-- PROFILE -->
+        <section class="profile">
+            <img src="foto-saya.jpg" alt="Foto Saya">
+            <div class="profile-text">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Halo, nama saya <b>Keyza</b>.  
+                    Saya tertarik di bidang memasak dan ingin mengembangkan
+                    kemampuan saya di dunia kuliner.  
+                    Saya senang mencoba resep baru dan bercita-cita memiliki usaha sendiri.
+                </p>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO MASAKAN -->
+        <section class="portfolio">
+            <h2>Hasil Masakan Saya</h2>
+
+            <div class="food-gallery">
+                <div class="food-card">
+                    <img src="masakan1.jpg" alt="Masakan 1">
+                    <p>Masakan Pertama</p>
+                </div>
+
+                <div class="food-card">
+                    <img src="masakan2.jpg" alt="Masakan 2">
+                    <p>Masakan Kedua</p>
+                </div>
+
+                <div class="food-card">
+                    <img src="masakan3.jpg" alt="Masakan 3">
+                    <p>Masakan Ketiga</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 - Portfolio Keyza
+    </footer>
+
+</body>
+</html>

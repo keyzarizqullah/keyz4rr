@@ -6,32 +6,20 @@
     <title>Portfolio Keyza</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #000000, #0a1a3f);
-            color: #ffffff;
+            color: white;
         }
 
         header {
             text-align: center;
-            padding: 40px 20px;
+            padding: 40px;
         }
 
         header h1 {
-            font-size: 2.5rem;
             color: #4da6ff;
-        }
-
-        header p {
-            margin-top: 10px;
-            font-size: 1.1rem;
-            color: #d0d0d0;
         }
 
         .container {
@@ -42,57 +30,50 @@
 
         .profile {
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
             margin-bottom: 50px;
         }
 
         .profile img {
             width: 200px;
             height: 200px;
-            object-fit: cover;
             border-radius: 50%;
+            object-fit: cover;
             border: 4px solid #4da6ff;
         }
 
         .profile-text h2 {
             color: #4da6ff;
-            margin-bottom: 10px;
-        }
-
-        .profile-text p {
-            line-height: 1.6;
-            color: #e0e0e0;
         }
 
         .portfolio h2 {
             text-align: center;
-            margin-bottom: 30px;
             color: #4da6ff;
+            margin-bottom: 30px;
         }
 
-        .food-gallery {
+        .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
 
-        .food-card {
+        .card {
             background: #0f1f4a;
-            border-radius: 12px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
         }
 
-        .food-card img {
+        .card img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
         }
 
-        .food-card p {
-            padding: 15px;
+        .card p {
+            padding: 10px;
             text-align: center;
             font-weight: bold;
         }
@@ -100,63 +81,60 @@
         footer {
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
             color: #aaa;
-            font-size: 0.9rem;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Portfolio Saya</h1>
-        <p>Pelajar | Cooking Enthusiast | Future Entrepreneur</p>
-    </header>
+<header>
+    <h1>Portfolio Saya</h1>
+    <p>Pelajar | Minat Kuliner | Calon Pengusaha</p>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <!-- PROFILE -->
-        <section class="profile">
-            <img src="foto-saya.jpg" alt="Foto Saya">
-            <div class="profile-text">
-                <h2>Tentang Saya</h2>
-                <p>
-                    Halo, nama saya <b>Keyza</b>.  
-                    Saya tertarik di bidang memasak dan ingin mengembangkan
-                    kemampuan saya di dunia kuliner.  
-                    Saya senang mencoba resep baru dan bercita-cita memiliki usaha sendiri.
-                </p>
+    <!-- FOTO DIRI -->
+    <section class="profile">
+        <img src="foto-saya.jpg" alt="Foto Saya">
+        <div class="profile-text">
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo, nama saya <b>Keyza</b>.  
+                Saya memiliki minat di bidang memasak dan senang mencoba berbagai menu.
+                Portfolio ini menampilkan hasil masakan yang saya buat sendiri.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOTO MASAKAN -->
+    <section class="portfolio">
+        <h2>Hasil Masakan Saya</h2>
+
+        <div class="gallery">
+            <div class="card">
+                <img src="masakan1.jpg" alt="Masakan 1">
+                <p>Tumis Pedas</p>
             </div>
-        </section>
 
-        <!-- PORTFOLIO MASAKAN -->
-        <section class="portfolio">
-            <h2>Hasil Masakan Saya</h2>
-
-            <div class="food-gallery">
-                <div class="food-card">
-                    <img src="masakan1.jpg" alt="Masakan 1">
-                    <p>Masakan Pertama</p>
-                </div>
-
-                <div class="food-card">
-                    <img src="masakan2.jpg" alt="Masakan 2">
-                    <p>Masakan Kedua</p>
-                </div>
-
-                <div class="food-card">
-                    <img src="masakan3.jpg" alt="Masakan 3">
-                    <p>Masakan Ketiga</p>
-                </div>
+            <div class="card">
+                <img src="masakan2.jpg" alt="Masakan 2">
+                <p>Mie Telur Spesial</p>
             </div>
-        </section>
 
-    </div>
+            <div class="card">
+                <img src="masakan3.jpg" alt="Masakan 3">
+                <p>Gorengan Homemade</p>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        © 2026 - Portfolio Keyza
-    </footer>
+</div>
+
+<footer>
+    © 2026 - Portfolio Keyza
+</footer>
 
 </body>
 </html>
